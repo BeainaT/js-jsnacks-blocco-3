@@ -6,9 +6,12 @@ let sum = 0;
 //eseguo ciclo 
 do {
     let userNumber = Number(prompt("Inserisci un numero")); //chiedo all'utente un numero
-    sum += userNumber; //aggiorno la somma con il numero inserito dall'utente
-    if (sum < 50) { //SE la somma è < 50
-        arr.push(userNumber); //aggiungo il numero inserito dall'utente nell'array
+    //verifico che il dato inserito sia un numero
+    if (!isNaN(userNumber)) {
+        sum += userNumber; //aggiorno la somma con il numero inserito dall'utente
+        if (sum < 50) { //SE la somma è < 50
+            arr.push(userNumber); //aggiungo il numero inserito dall'utente nell'array
+        }
     }
 } while (sum < 50); //esco dal ciclo quando la somma è < 50
 
