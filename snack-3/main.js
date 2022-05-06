@@ -25,8 +25,8 @@ for ( i = 0; i < 10; i++) {
     } else {
         oddBox.append(numbers);
     }
-    console.log(myArray);
 }
+console.log(myArray);
 
 
 
